@@ -1,0 +1,9 @@
+- name: PLAY 1
+  hosts: web
+  tasks:
+  - name: task 1
+    ansible.builtin.debug:
+      msg: "Hi folks i'm learning aws devops"
+  - name: task 2
+    ansible.builtin.debug:
+      msg: "Hi guyzs I'm learning currnelty ansible"
