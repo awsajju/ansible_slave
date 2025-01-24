@@ -3,6 +3,7 @@
   vars_prompt:
     - name: course
       prompt: Enter the course name
+      private: false
     - name: duration
       prompt: Enter the course duration
   tasks:
