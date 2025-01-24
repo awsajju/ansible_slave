@@ -1,0 +1,13 @@
+- name: task  variable
+  hosts: web
+  vars:
+    course: "AWS devops"
+  tasks:
+  - name: printing the varaibale from task
+    vars:
+      course: "Ansible"
+    ansible.builtin.debug:
+      msg: "I'm learning the {{ course }}"
+  - name: printing the task varaibale
+    ansible.builtin.debug:
+      msg: "I'm learning the {{ course }}"
