@@ -5,5 +5,5 @@
   tasks:
   - name: spliting funtion
     ansible.builtin.debug:
-      msg: "{ fruits | split "," }"
+      msg: "{ fruits | split ',' }"
     
