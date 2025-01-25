@@ -4,7 +4,10 @@
   tasks:
   - name: storing the values in register keys
     anisble.builtin.command: ls -ltr
-      register: command_result
+    register: command_result
   - name: regsiter
     ansible.builtin.debug:
-      msg: "{{ command_result.stdout_lines }}"
+      msg: "{{ command_result }}"
+
+
+    
