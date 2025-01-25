@@ -1,6 +1,6 @@
 - name: register
   hosts: local
-  connection: yes
+  connection: local
   tasks:
   - name: storing the values in register keys
     anisble.builtin.command: ls -ltr
