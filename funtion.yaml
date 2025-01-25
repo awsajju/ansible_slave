@@ -7,6 +7,6 @@
   - name: spliting funtion
     ansible.builtin.debug:
       msg: "{{ fruits | split (',') }}"
-    register: fruits
+    
 
     
