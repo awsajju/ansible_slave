@@ -7,4 +7,4 @@
       register: command_result
   - name: regsiter
     ansible.builtin.debug:
-      msg: "{{ command_result }}"
+      msg: "{{ command_result.stdout_lines }}"
