@@ -3,7 +3,7 @@
   connection: local
   tasks:
   - name: storing the values in register keys
-    anisble.builtin.command: ls -ltr
+    ansible.builtin.command: ls -ltr
     register: command_result
   - name: regsiter
     ansible.builtin.debug:
