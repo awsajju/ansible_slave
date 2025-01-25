@@ -3,12 +3,12 @@
   become: yes
   tasks:
   - name: checking the condition
-    ansible.builtin.package:
+    ansible.builtin.dnf:
       name: nginx
       state: installed
     when: ansible_os_family == "RHEL9"
   - name: checking
-    ansible.builtin.package:
+    ansible.builtin.apt:
       name: nginx
       state: installed
     when: ansible_os_family == "Debain"
