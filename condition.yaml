@@ -1,0 +1,14 @@
+- name: condition
+  hosts: web
+  become: yes
+  tasks:
+  - name: checking the condition
+    ansible.builtin.package:
+      name: nginx
+      state: installed
+    when: ansible_os_family == "RHEL9"
+  - name: checking
+    ansible.builtin.package:
+      name: nginx
+      state: installed
+    when: ansible_os_family == "Debain"
