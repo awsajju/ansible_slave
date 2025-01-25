@@ -1,0 +1,9 @@
+- name: functions
+  hosts: web
+  vars:
+    fruits: "apple,banana,grape"
+  tasks:
+  - name: spliting funtion
+    ansible.builtin.debug:
+      msg: "{ fruits | split "," }"
+    
