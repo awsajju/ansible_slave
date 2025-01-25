@@ -10,5 +10,5 @@
     register: fruits
   - name: register
     ansible.builtin.debug:
-      msg: fruits
+      msg: {{ fruits }}
     
