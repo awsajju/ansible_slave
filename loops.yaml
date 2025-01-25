@@ -1,0 +1,12 @@
+- name: printing loops
+  hosts: web
+  become: yes
+  tasks:
+  - name: printing loops
+    ansible.builtin.package:
+      name: "{{ item.name }}"
+      state: "{{ item.name }}"
+    loop:
+      - { name: 'git', state: 'absent' }
+      - { name: 'mysql', state: 'absent' }
+      - { name: 'java', state: 'present' }
