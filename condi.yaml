@@ -6,7 +6,7 @@
   - name: checking the given number is greater
     ansible.builtin.debug:
       msg: "given number is > {{ my_num }}"
-    when: my_num > 20
+    when: my_num > 5
   - name: checking the given number
     ansible.builtin.debug:
       msg: "given number is lesst than {{ my_num }}"
